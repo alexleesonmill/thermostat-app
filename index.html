@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" href="./public/styles.css">
+    <meta charset="UTF-8">
+    <title>Thermostat</title>
+</head>
+    <body>
+        <section>
+            <h1 id="temperature"></h1>
+            Select your current city to display weather:<select name="city" id="city">
+                <option value="London">London</option>
+                <option value="Edinburgh">Edinburgh</option>
+                <option value="Epsom">Epsom</option>
+                <option value="Dunfermline">Dunfermline</option>
+            </select>
+            <h2>The current weather is: <span id="current-weather"></span> °C</h2>
+            <p>
+                    <button id="temperature-up">+</button>
+                    <button id="temperature-down">-</button>
+                    <button id="temperature-reset">reset</button>
+                    power saving mode is: <span id="power-saving-status"></span>
+                    <button id="powersaving-on">PSM On</button>
+                    <button id="powersaving-off">PSM Off</button>
+                </p>
+        </section>
+        <script src="src/Thermostat.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="interface.js"></script>
+        </body>
+</html>
